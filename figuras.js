@@ -81,3 +81,22 @@ function CalcularAreaCuadrado(){
 
     alert(area);
 }
+
+function CalcularAlturaTriangulo(){
+    const lado1 = document.getElementById("Lado1TrianguloIsoceles");
+    const lado2 = document.getElementById("Lado2TrianguloIsoceles");
+    const base = document.getElementById("BasedelTriangulo");
+    
+    const lado1valor= lado1.value;
+    const lado2valor= lado2.value;
+    const basevalor = base.value;
+
+    if((lado1valor == lado2valor) && (lado1valor != basevalor)){
+        const altura = Math.sqrt(lado1valor**2-(basevalor**2/4));
+        alert(altura);
+    }
+    else{
+        alert("no es un triagulo isoceles"+basevalor);
+    }
+  
+}
