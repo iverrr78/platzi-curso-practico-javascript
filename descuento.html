@@ -9,7 +9,19 @@
 <body>
     <header>
         <h1>Porcentajes y descuentos</h1>
+        <p>Segundo taller</p>
     </header>
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+        <form>
+            <label for="InputPrecio">Escribe el precio de tu producto</label>
+            <input id="InputPrecio" type="number">
+            <label>Escribe el descuento</label>
+            <input id="InputDescuento" type="number">
+            <button for="InputDescuento" type="button" onclick="MostrarPrecio()">Ccalcular el precio con descuento</button>
+        </form>
+        <p id="Resultado"></p>
+    </section>
     <script src="descuento.js"></script>
 </body>
 </html>

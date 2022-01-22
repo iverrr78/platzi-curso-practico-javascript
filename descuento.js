@@ -8,3 +8,15 @@ function CalcularPrecioConDescuento(precio,descuento){
 
     return precioConDescuento;
 }
+
+function MostrarPrecio(){
+    const precio = document.getElementById("InputPrecio");
+    const descuento = document.getElementById("InputDescuento");
+    const PResultado = document.getElementById("Resultado");
+
+    const preciovalue = precio.value;
+    const descuentovalue = descuento.value;
+
+    const resultado = CalcularPrecioConDescuento(preciovalue, descuentovalue);
+    PResultado.innerText =`El precio con descuento es ${"$"+resultado}`;
+}
